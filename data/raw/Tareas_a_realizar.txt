@@ -1,0 +1,21 @@
+Tareas a realizar
+-----------------
+
+1. Realizar el EDA del dataset
+	a. Seleccionar un subconjunto de muestras:
+		i. Seleccionar todas las muestras de una clase mayoritaria y todas las muestras de la clase "very_recom" (problema de clasificación binario)
+
+2. Balancear las clases seleccionadas.
+	a. Crear una variante del dataset aplicando una técnica híbrida.
+	
+3. Seleccionar dos técnicas de clasificación y entrenar modelos para predecir las tres categorías creadas.
+	a. Realizar al menos cinco ejecuciones independientes (modificando hiper-parámetros) de ambas técnicas calculando las métricas vistas en clase. 
+		i. Use cross-validation para medir cada ejecución independiente.
+	b. Promediar las métricas entre las cinco ejecuciones independientes.
+	c. Comparar los resultados obtenidos.
+	
+4. Armar un ensemble Stacking usando los 10 modelos del punto 2 como modelos débiles.
+	a. Realizar al menos cinco ejecuciones independientes (modificando hiper-parámetros) calculando las métricas vistas en clase.
+		i. Use cross-validation para medir cada ejecución independiente.
+	b. Promediar las métricas entre las cinco ejecuciones independientes.
+	c. Comparar los resultados obtenidos con los conseguidos en la tarea 3.
