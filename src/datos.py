@@ -4,8 +4,12 @@ El archivo original (data/raw/Datos.txt) no tiene encabezado, así que acá
 le ponemos los nombres de las columnas según data/raw/Descripcion.txt.
 """
 from pathlib import Path
-
+import numpy as np
 import pandas as pd
+import matplotlib.pyplot as plt
+import seaborn as sns
+import plotly.express as px
+
 
 RAIZ = Path(__file__).resolve().parent.parent
 RUTA_DATOS = RAIZ / "data" / "raw" / "Datos.txt"
@@ -26,3 +30,4 @@ COLUMNAS = [
 def cargar_datos(ruta=RUTA_DATOS) -> pd.DataFrame:
     """Devuelve el dataset completo como DataFrame (todas las columnas como texto)."""
     return pd.read_csv(ruta, header=None, names=COLUMNAS, dtype=str, skip_blank_lines=True)
+
